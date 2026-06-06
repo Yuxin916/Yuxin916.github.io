@@ -117,7 +117,76 @@
             </tr>
 
 
-            
+
+          </tbody></table>
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:16px;width:100%;vertical-align:middle">
+                <h3>Object Navigation — IntentNav</h3>
+                <p>IntentNav learns human-like ObjectNav policies from human demonstrations via spatial-visual imitation learning. The trained VLM policy transfers zero-shot across wheeled, quadruped (Go2), and humanoid (G1) robots without any additional fine-tuning, demonstrating strong embodiment-agnostic generalization.</p>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:0 16px;width:100%;">
+                <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;"><tbody>
+                  <tr>
+                    <td style="padding:8px;width:33.3%;vertical-align:top;text-align:center;">
+                      <span class="papertitle">Wheeled Robot</span>
+                      <video width="100%" controls style="margin-top:8px;">
+                        <source src="demos/intentnav_wheel.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </td>
+                    <td style="padding:8px;width:33.3%;vertical-align:top;text-align:center;">
+                      <span class="papertitle">Go2 (Quadruped)</span>
+                      <video width="100%" controls style="margin-top:8px;">
+                        <source src="demos/intentnav_go2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </td>
+                    <td style="padding:8px;width:33.3%;vertical-align:top;text-align:center;">
+                      <span class="papertitle">G1 (Humanoid)</span>
+                      <video width="100%" controls style="margin-top:8px;">
+                        <source src="demos/intentnav_g1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </td>
+                  </tr>
+                </tbody></table>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:16px;width:100%;vertical-align:middle">
+                <h3>Vision-Language Navigation — Goal2Pixel</h3>
+                <p>Goal2Pixel reformulates VLN-CE as navigable pixel grounding, predicting a visible pixel in the image plane that is back-projected into a 3D waypoint for navigation. This pixel-based interface enables efficient long-horizon navigation with far fewer VLM inference calls than action-prediction baselines.</p>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:0 16px;width:100%;">
+                <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;"><tbody>
+                  <tr>
+                    <td style="padding:8px;width:50%;vertical-align:top;text-align:center;">
+                      <span class="papertitle">Goal2Pixel Demo 1</span>
+                      <video width="100%" controls style="margin-top:8px;">
+                        <source src="demos/goal2pixel_1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </td>
+                    <td style="padding:8px;width:50%;vertical-align:top;text-align:center;">
+                      <span class="papertitle">Goal2Pixel Demo 2</span>
+                      <video width="100%" controls style="margin-top:8px;">
+                        <source src="demos/goal2pixel2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </td>
+                  </tr>
+                </tbody></table>
+              </td>
+            </tr>
           </tbody></table>
 
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -130,6 +199,65 @@
           
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             
+            <tr>
+              <td style="padding:16px;width:50%;vertical-align:middle">
+                <img src="research/11_intentnav.png" width="100%" alt="IntentNav">
+              </td>
+              <td style="padding:8px;width:70%;vertical-align:middle">
+                <a href="https://anonymous.4open.science/w/IntentNav/">
+                  <span class="papertitle">IntentNav: Learning Spatial-Visual Object Navigation from Human Demonstrations</span>
+                </a>
+                <br>
+                <strong>Yuxin Cai</strong><sup>*</sup>, Zongtai Li<sup>*</sup>, Maonan Wang, Muyi Bao, Haokun Zhu, Ruofei Bai, Ding Zhao, Zirui Li, Wenshan Wang, Wei-Yun Yau, Ji Zhang, Chen Lv
+                <br>
+                <sup>*</sup>Equal contribution
+                <br>
+                <em>Conference on Robot Learning (CoRL), 2026</em>
+                <p></p>
+                <p>
+                  IntentNav is a spatial-visual imitation framework that learns human-like ObjectNav policies from human demonstrations. It introduces Frontier-based Human-Intent Labeling to infer high-level search intent, constructs a spatial-visual candidate space combining BEV memory and egocentric visual memory, and trains a VLM policy with an Intent-Aligned Objective. IntentNav achieves state-of-the-art performance on MP3D, HM3D-v1 and HM3D-v2 benchmarks, and transfers zero-shot to wheeled, quadruped, and humanoid robots without VLM fine-tuning.
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding:16px;width:50%;vertical-align:middle">
+                <img src="research/9_goal2pixel.png" width="100%" alt="Goal2Pixel">
+              </td>
+              <td style="padding:8px;width:70%;vertical-align:middle">
+                <a href="https://anonymous.4open.science/w/Goal2Pixel-031D/">
+                  <span class="papertitle">Goal2Pixel: Grounding Goals to Pixels for Vision-Language Navigation</span>
+                </a>
+                <br>
+                Muyi Bao<sup>*</sup>, <strong>Yuxin Cai</strong><sup>*</sup>, Hang Xu, Zongtai Li, Jinxi He, Jingfan Tang, Chen Lv, Ji Zhang, Yaqi Xie, Wenshan Wang
+                <br>
+                <sup>*</sup>Equal contribution
+                <br>
+                <em>Conference on Robot Learning (CoRL), 2026</em>
+                <p></p>
+                <p>
+                  Goal2Pixel reformulates VLN-CE as navigable pixel grounding, using the image plane as a unified spatial interface between VLM reasoning and robot motion. The model predicts a visible navigable pixel back-projected into a 3D waypoint, uses visibility-aware keyframe memory for long-horizon navigation, and introduces semantic embeddings with coordinate-aware auxiliary losses. It achieves 54.1% SR and 52.5% SPL on R2R-CE Val-Unseen with only 7.75 VLM calls per episode — 6× fewer than action prediction baselines.
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding:16px;width:50%;vertical-align:middle">
+                <img src="research/10_robotastokens.png" width="100%" alt="Robots as Tokens">
+              </td>
+              <td style="padding:8px;width:70%;vertical-align:middle">
+                <span class="papertitle">Robots as Tokens: Unified Diffusion Transformer for Coordinated Multi-Robot Trajectory Generation</span>
+                <br>
+                Ruofei Bai, Jie Chen, <strong>Yuxin Cai</strong>, Li Jun, Wei-Yun Yau, Lihua Xie
+                <br>
+                <em>Conference on Robot Learning (CoRL), 2026</em>
+                <p></p>
+                <p>
+                  Roken is a unified diffusion transformer that directly generates coordinated multi-robot trajectories satisfying both individual safety and global connectivity constraints. Each robot is represented as a discrete token that interacts via self-attention and cross-attends to map tokens. Auxiliary tasks based on Bayes' theorem — local occupancy reconstruction and long-horizon waypoint prediction — provide multi-scale supervision. Roken handles single-robot planning, multi-robot generation, and conditional generation in a single feed-forward model, and demonstrates strong scalability and generalization to unseen environments.
+                </p>
+              </td>
+            </tr>
+
             <tr>
               <td style="padding:16px;width:50%;vertical-align:middle">
                 <img src='research/7_ImagiNav.png' width="100%" alt="ImagiNav">
